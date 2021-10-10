@@ -26,9 +26,7 @@
             if($value <= $credit ){
                 echo "<p>".$key."</p>"; 
             }
-        }
-    }
-
+        } 
     ?>
   </body>
 </html>

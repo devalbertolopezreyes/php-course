@@ -26,7 +26,15 @@
             if($value <= $credit ){
                 echo "<p>".$key."</p>"; 
             }
-        } 
+        }
+        
+        echo tax_calc(750,0.223); // When you refresh your page you should the value 917.25 at the bottom of the screen.
+
+        function tax_calc($amount,$tax){
+            $calculate_tax = $amount*$tax;
+            $amount = round($amount+$calculate_tax,2);
+            return $amount;
+        }
     ?>
   </body>
 </html>
